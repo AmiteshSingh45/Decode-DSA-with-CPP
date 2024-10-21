@@ -1,0 +1,25 @@
+// class Solution {
+// public:
+//     vector<int> answerQueries(vector<int>& nums, vector<int>& queries) {
+//         int n=nums.size();
+//         int m=queries.size();
+//         vector<int> ans(m);
+//         sort(nums.begin(),nums.end());//t.c=0(nlogn)  s.c=0(logn)
+//         //prefix sum
+//         for(int i=1;i<n;i++){
+//             nums[i]+=nums[i-1];
+//         }
+//         //
+//         for(int i=0;i<m;i++){  //t.c=0(m*n)
+//             int count=0;
+//             for(int j=0;j<n;j++){
+//                     if(nums[j]>queries[i]) break;
+//                     else count++;
+//             }
+//             ans[i]=count;
+//         }
+//         return ans; //T.c=0(n*((m+logn))
+
+
+//     }
+// };
